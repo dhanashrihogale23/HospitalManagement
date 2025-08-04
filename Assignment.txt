@@ -1,0 +1,957 @@
+abc project name
+src mdhi 
+bank ani test class
+
+bank class java project
+
+package abc;
+
+public class Bank {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Customer c= new Customer();
+		         c.name = "john";
+		         c.address="pune";
+		         c.email="john@gmail.com";
+		         c.age=22;
+		         c.mobNo=4563;
+    
+	BankingService bs = new BankingService();
+	       System.out.println(bs.openAccount(c));
+
+	}
+
+}
+
+class BankingService{
+	
+	String openAccount(Customer c)
+	{
+		return c.name + " u r account is opened";
+	}
+}
+
+class Customer{
+  String name;
+  String address;
+  String email;
+  int age;
+  int mobNo;
+}
+
+
+package abc;
+
+public class Test {
+	
+	public static void main(String[] a) {
+		
+		System.out.println("hello")                                   ;
+	    
+		Calculator c = new Calculator();
+		/*
+	    System.out.println(c.add(10,10));
+	    System.out.println(c.sub(20,10));
+	    */
+		int ad = c.add(100,100);
+		    System.out.println(ad);
+		    
+		 
+	    
+	}
+
+}
+
+class Calculator{
+	int add(int a, int b) {
+		return a + b;
+	}
+	
+	int sub(int a,int b) {
+		return a-b;
+	}
+}
+
+
+
+# Bus service project name
+Tes1 class name
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Passanger p = new Passanger();
+		p.name = "sam";
+		p.rout = "Mumbai";
+		p.seat = 34;
+		p.mobno = 4566733;
+		
+		BusPassengerService bus = new BusPassengerService();
+		bus.PassangerDetails(p);
+
+	}
+
+}
+
+class BusPassengerService{
+	public void PassangerDetails(Passanger p) {
+		System.out.println(" ---------------------- Passenger Details ---------------------");
+		System.out.println("Name: " + p.name);
+		System.out.println("Rout:" + p.rout);
+		System.out.println("Seat:"+ p.seat);
+		System.out.println("MobNo:" + p.mobno);
+	   
+	}
+	
+}
+
+class Passanger{
+	String name;
+	String rout;
+	int seat;
+	int mobno;
+}
+
+
+# Demo project name java project
+
+src
+doctor.java
+
+public class Doctor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		DoctorID DID = new DoctorID();
+		DID.setName("Ram");
+		DID.setId (11);
+		DID.setSpecialisation("cardiologist");
+		DID.setMobileNo(983478245);
+		
+		
+		System.out.println(DID.getName());
+		System.out.println(DID.getId());
+		System.out.println(DID.getSpecialisation());
+		System.out.println(DID.getMobileNo());
+		
+
+	}
+
+}
+
+class DoctorID{
+    private String Name;
+    private int Id;
+    private String Specialisation;
+    private int MobileNo;
+    
+    void setName(String n) {
+    		Name = n;
+    }
+    String getName() {
+    	return Name;
+    	
+    }
+    
+    void setId(int id) {
+    	    Id = id;
+    }
+    int getId() {
+    	return Id;
+    }
+    
+
+    void setSpecialisation(	String specialist ) {
+    	    Specialisation = specialist;
+    }
+    String getSpecialisation () {
+    	return Specialisation;
+    }
+    
+    void setMobileNo(int mobno) {
+    	    MobileNo = mobno;
+    }
+    int getMobileNo() {
+    	return MobileNo;
+    }
+    
+    
+    
+    
+}
+
+# order details
+public class OrderDetails {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Order o = new Order();
+		      o.setid(101);
+		      o.setdate(221023);
+		      o.setlocation("latur");
+		      o.setprice(500);
+		      
+       System.out.println(o.getid());
+       System.out.println(o.getdate());
+       System.out.println(o.getlocation());
+       System.out.println(o.getprice());
+       
+
+	}
+
+}
+
+
+class Order{
+	private int id;
+	private int date;
+	private String location;
+	private int price;
+	
+	void setid(int i) {
+		this.id = i;
+	}
+	int getid() {
+		return id;
+	}
+	
+	void setdate(int dt) {
+		this.date = dt;
+	}
+	int getdate() {
+		return date;
+	}
+	
+	void setlocation(String loc) {
+		this.location = loc;
+	}
+	String getlocation(){
+		return location;
+	}
+	
+	void setprice(int pr) {
+		this.price = pr;
+	}
+	int getprice(){
+		return price;
+	}
+}
+
+# test2 java
+public class Test2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Customer c1 = new Customer();
+		c1.setname("raj");
+		c1.setId(100);
+		
+		System.out.println(c1.getname());
+		System.out.println(c1.getId());
+
+	}
+
+}
+
+class Customer{
+	private String name;
+	private int Id;
+	
+	void setname(String n) {
+		name = n;
+	}
+	String getname() {
+		return name;
+	}
+	
+	
+	void setId(int id) {
+		Id = id;
+	}
+	int getId() {
+		return Id;
+	}
+	
+}
+
+
+
+# spring boot project
+
+WebCalc
+
+src
+com.example.demo
+
+WebCalculator.java class
+
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+@RestController
+public class WebCalculator {
+	
+	/*
+	@GetMapping("WebCalc/welcome")
+	String welcome()
+	{
+		return "welcome to WebCalc";
+	}
+	
+	
+	@GetMapping("WebCalculator/add/{a}/{b}")
+	int add(@PathVariable("a") int a, @PathVariable("b") int b)
+	{
+	return a+b;
+	}
+	
+	@GetMapping("WebCalculator/sub/{a}/{b}")
+	int sub(@PathVariable("a") int a, @PathVariable("b") int b)
+	{
+	return a-b;
+	}
+	
+	@GetMapping("WebCalculator/mul/{a}/{b}")
+	int mul(@PathVariable("a") int a, @PathVariable("b") int b)
+	{
+	return a*b;
+	}
+	
+	@GetMapping("WebCalculator/div/{a}/{b}")
+	int div(@PathVariable("a") int a, @PathVariable("b") int b)
+	{
+	return a/b;
+	}
+
+   */
+	@GetMapping("calc/{operationType}/{a}/{b}")
+	int calculation(@PathVariable String operationType,@PathVariable int a,@PathVariable int b)
+	{
+		if(operationType.equals("add"))
+		{
+		return a+b;
+		}
+		if(operationType.equals("sub"))
+		{
+		return a-b;
+		}
+		if(operationType.equals("mul"))
+		{
+		return a*b;
+		}
+		if(operationType.equals("div"))
+		{
+		return a/b;
+		}
+		return 0;
+		
+		
+	}
+}
+
+
+# Netbanking project name
+src
+com.exam
+
+bank11.java
+
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class bank11 {
+	
+	@GetMapping("Bank/welcome")
+	String welcome() {
+		return "welcome to the bank portal";
+	}
+	
+	@GetMapping("Bank/deposite/{acNo}/{amount}/{sign}")
+	String deposite(@PathVariable int acNo,@PathVariable int amount,@PathVariable String sign)
+	{
+		return amount + "is deposited int u r account no = " +acNo;
+	}
+	
+	@GetMapping("Bank/OpenAccount/{name}/{address}/{adhar}/{pan}/{age}/{mbNo}/{email}/{sign}")
+	String OpenAccount(@PathVariable String name,String address,String adhar,String pan,int age,int mbNo,String email,String sign) 
+	{
+		return "u r account is opend";
+	}
+	
+	
+
+}
+
+
+#BankingService.java
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BankingServices {
+	@GetMapping("bank/deposite/{accno}/{amount}/{sign}")
+	String deposit(@PathVariable int accno,@PathVariable int amount,@PathVariable String sign){
+		//logic
+		return "amount = " + amount  + "is deposited in accno = " + accno ;
+		
+	}
+	@GetMapping("bank/withdrawl/{accno}/{amount}/{pin}")
+	String withdrawl(@PathVariable int accno, @PathVariable int amount,@PathVariable int pin) {
+		
+		return "amount is withdrawl =" + amount;
+	}
+	
+
+}
+
+
+
+
+OrderManagement project name
+
+Orderdetails.java class
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class Orderdetails {
+@PostMapping("addorder")
+String addorder(@RequestBody order o) {
+	return "ordername : " + o.getName() 
+	+"\n date : " + o.getDate()
+	+"\n price : " + o.getPrice()
+	+"\n add : " + o.getAdd();
+			
+}
+}
+
+
+class order{
+	private String name;
+	private int date;
+	private int price;
+	private String add;                                                                                                                                                                     String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getDate() {
+		return date;
+	}
+	public void setDate(int date) {
+		this.date = date;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	public String getAdd() {
+		return add;
+	}
+	public void setAdd(String add) {
+		this.add = add;
+	}
+	
+	
+}
+
+
+StudentManagement project
+
+StudentController.java class
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class StudentController {
+	@PostMapping("addStudent")
+	String addStudent(@RequestBody Student s) {
+		
+		StudentService ss = new StudentService();
+		return ss.addStudentInDB(s);
+	}
+
+}
+
+class StudentService{
+	
+ String addStudentInDB(Student s) {
+  if(s.getAge() < 18) {
+	  
+	return "not elligible";
+  }
+  return "added";
+ }
+}
+
+
+student.java class
+package com.example.demo;
+
+public class Student {
+	private String name;
+	private String email;
+	private int age;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+
+}
+
+# CustomerManagement
+src
+com.example.demo
+
+CustomerController
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CustomerController {
+	
+	@PostMapping("addCustomer")
+	String addCustomer(@RequestBody Customer c)
+	{
+	 if(c.getAge()< 18)
+	 {
+		return "customer is not elligible";
+	 }
+		return "customer added";
+	}
+
+}
+
+#Customer.java
+package com.example.demo;
+
+public class Customer {
+	private String name;
+	private int age;
+	private int cid;
+	private int mNo;
+	private String email;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+	public int getmNo() {
+		return mNo;
+	}
+	public void setmNo(int mNo) {
+		this.mNo = mNo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	
+}
+
+#CustomerService11 project name
+
+CustomerDetail.java
+
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CustomerDetail {
+	@PostMapping("savecus")
+	String savecustomer( @RequestBody  Customer c)
+	{
+		return "Name: " + c.getcname() + "\nAddress: " + c.getadd() ;
+	
+	}
+	
+
+	
+	//Cutomer c = new Customer();
+
+}
+
+class Customer
+{
+	private String cname;
+	private String add;
+	
+	public void setcname(String c)
+	{
+		cname = c;
+	}
+	String getcname()
+	{
+		return cname;
+	}
+	
+	public void setadd(String a)
+	{
+		add = a;
+	}
+	String getadd()
+	{
+		return add;
+	}
+}
+
+
+HospitalManagement springboot project
+
+src
+com.demo.java
+
+doctor1.java
+
+package com.example.demo;
+
+public class doctor1 {
+	private String name;
+	private String email;
+	private int age;
+	private String Spl;
+	private String education;
+	private int experience;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getSpl() {
+		return Spl;
+	}
+	public void setSpl(String spl) {
+		Spl = spl;
+	}
+	public String getEducation() {
+		return education;
+	}
+	public void setEducation(String education) {
+		this.education = education;
+	}
+	public int getExperience() {
+		return experience;
+	}
+	public void setExperience(int experience) {
+		this.experience = experience;
+	}
+
+	
+	
+}
+
+# DoctorController1.java
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DoctorController1 {
+	
+		@PostMapping("adddoctor1")
+		String adddoctor1(@RequestBody doctor1 dr1) {
+			
+			doctor1Service ds = new doctor1Service();
+			return ds.adddoctor1InDB(dr1);
+		}
+
+	}
+
+class doctor1Service{
+		
+    String adddoctor1InDB(doctor1 dr1) {
+	  if(dr1.getExperience() < 3) {
+		  
+		return "not elligible to do surgery";
+	  }
+	  return "added";
+	 }
+	}
+
+
+
+#DoctorController.java
+
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class DoctorController {
+	@PostMapping("savedr")
+	String savedoctor( @RequestBody Doctor dr)
+	{
+		return "Name: " + dr.getname() + "\nAddress: " + dr.getaddress() + "\nEmail: " 
+				+ dr.getemail() + "\nSpecialization: " + dr.getspecialization() + "\nMobileno:" + dr.getmobileno();
+	}
+	
+	
+	
+	
+}
+
+class Doctor
+{
+	private String name;
+	private String address;
+	private String email;
+	private String specialization;
+	public int mobileno;
+	
+	
+	public void setname(String n)
+	{
+		name = n;
+	}
+	String getname()
+	{
+		return name;
+	}
+	
+	public void setaddress(String a)
+	{
+		address = a;
+	}
+	String getaddress()
+	{
+		return address;
+	}
+	
+	public void setemail(String e)
+	{
+		email = e;
+	}
+	String getemail()
+	{
+		return email;
+	}
+	
+	public void setspecialization(String spec)
+	{
+		specialization = spec;
+	}
+	String getspecialization()
+	{
+		return specialization;
+	}
+	
+	public void setmobileno(int mobno)
+	{
+		mobileno = mobno;
+	}
+	int getmobileno()
+	{
+		return mobileno;
+	}
+	
+	
+	
+}
+
+
+#schoolmanagement project
+com.example.demo.controller
+ResultController
+StudentController
+TeacherController
+
+
+
+TeacherController
+
+
+package com.example.demo.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.demo.entity.Teacher;
+import com.example.demo.service.TeacherService;
+
+@RestController
+public class TeacherController {
+	@PostMapping("addTeacher")
+	String addTeacher(@RequestBody Teacher t)
+	{
+		
+		TeacherService ts= new TeacherService();
+		               ts.saveTeacherInDb(t);
+		               
+		               
+		return "teacher added in db";
+	}
+	
+	@GetMapping("getTeacher")
+	Teacher getTeacher() 
+	{
+		
+	   Teacher t = new Teacher();
+	           t.setName("seema hadke");
+	           t.setDepartment("IT");
+	           t.setEmail("seema@gmail.com");
+	           t.setEducation("BE IN CS");
+	 
+	   return t;
+	}
+
+}
+	
+
+com.example.demo.entity
+Result
+Student
+Teacher
+
+Teacher
+package com.example.demo.entity;
+
+public class Teacher {
+	private String name;
+	private String department;
+	private String email;
+	private String education;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getDepartment() {
+		return department;
+	}
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public String getEducation() {
+		return education;
+	}
+	public void setEducation(String education) {
+		this.education = education;
+	}
+	
+
+}
+
+
+com.example.demo.service
+ResultService
+StudentService
+TeacherService
+
+
+TeacherService
+
+package com.example.demo.service;
+
+import com.example.demo.entity.Teacher;
+
+
+public class TeacherService {
+	
+public	String saveTeacherInDb(Teacher t) 
+{
+	if(t.getEducation()== "BE IN CS")
+	{
+	   return "teacher is elligible to teach student";
+	}
+	return "not elligible";
+	}
+
+}
+
+
+
